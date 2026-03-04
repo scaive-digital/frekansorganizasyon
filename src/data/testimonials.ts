@@ -90,4 +90,22 @@ export const testimonials: Testimonial[] = [
         role: "Kına Gelini",
         content: "Ben o kadar eğlenmişim ki yeni kendime geldim. Sizi gerçekten çok sevdim her istediğimi en güzel şekilde gördüm, isteklerim ne güzel anlaşılmış dedim. Salona girdiğimde o kadar mutlu oldum ki bütün stres heyecan gitti yerini mutluluk aldı. Hiç unutamayacağım bir kına gecesi yaşattınız, her gelen biz böyle güzel bir kınaya gitmedik demişler. Enerjinizin bana destek oluşu çok güzeldi, şahaneydiniz."
     },
+    {
+        id: "t15",
+        name: "İlknur",
+        role: "Kına Gelini",
+        content: "Deniz hanım günaydın, size ayrı teşekkür etmek istedim ilk günden beri hep yanımdaydınız ilginiz samimiyetiniz tatlılığınızla bana o güveni vermiştiniz. Dün gece muhteşemdi her konuda her detayla yani ne desem az kalır, içerideki uyuma bayıldım ilk gördüğümde işte tam olarak bunu istiyordum dedim. İyi ki karşılaştık, bi abla gibi görüyorum artık sizi. Her şey için çok teşekkür ederim gece boyu halimden belliydi zaten o kadar keyifliydim ki hepsi sizin emeğiniz sayesinde."
+    },
+    {
+        id: "t16",
+        name: "Merve Erol",
+        role: "Gelin",
+        content: "Yaa çok teşekkür ederim valla iyi ki sizle tanışmışız ben de hep çok rahattım yani hiç düşünmedim hele kınada tamamen salmış durumdaydım herkes konuşuyor zaten sizin ilginizi her şey çok güzeldi."
+    },
+    {
+        id: "t17",
+        name: "Büşra",
+        role: "Gelin",
+        content: "Her şey için çok çok çok teşekkür ederim çok çok mutlu ettin beni, verdiğin güvenden daha fazlasını verdin hissettirdin tanıştığıma çok çok memnun oldum kınamda kesin düğünde de olması için uğraşacağım kesinlikle sana teslim etmek isterim."
+    },
 ];
