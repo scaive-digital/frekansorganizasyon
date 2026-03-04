@@ -66,4 +66,28 @@ export const testimonials: Testimonial[] = [
         role: "Gelin",
         content: "En büyük teşekkürümüz size, her şey muazzam ötesiydi, masal diyarında gibi hissettirdiniz adeta hem kına hem düğün. Özellikle o canlı çiçekler her yer mis gibi kokuyordu. Elinize emeğinize yüreğinize sağlık. İşinizi severek yapıyorsunuz ve bu kadar yansıyor ki iyi ki varsınız."
     },
+    {
+        id: "t11",
+        name: "Senanur Ertürk",
+        role: "Nişan Gelini",
+        content: "Hayalimizdeki nişan organizasyonunu gerçeğe dönüştürdüğünüz için çok teşekkür ederiz. Her detay özenle düşünülmüş, her şey tam da istediğimiz gibiydi. Emeğiniz ve zarafetiniz için minnettarız."
+    },
+    {
+        id: "t12",
+        name: "Betül Cihan",
+        role: "Kına Gelini",
+        content: "Yaaa Ayşe hanımm ne diyeceğimi nasıl teşekkür edeceğimi bilmiyorum harika olduğunuzu zaten biliyordum ama ne yalan söyleyeyim bu kadarını da beklemiyordum. Her şey o kadar detaylarıyla mükemmel ve uyumluydu ki Allah'ım iyi ki yolumu sizlere düşürmüş. Hele o inanılmaz büyük sürpriziniz... Bir ömür kalbimde bambaşka yerde olacaksınız. Bu işe kalbinizi katıp rüya gibi sonuç çıkardınız tüm misafirlerim detayların güzelliğinden bahsetti."
+    },
+    {
+        id: "t13",
+        name: "Beyzanur Öztürk",
+        role: "Gelin",
+        content: "Deniz hanımcım, Ayşe hanımcım siz birer efsanesiniz dün harikalar yarattınız her şey o kadar eşsiz ve mükemmeldi ki aldığım güzel yorumların haddi hesabı yok. İyi ki sizle yollarımız kesişmiş iyi ki siz. Sizi çok seviyorum."
+    },
+    {
+        id: "t14",
+        name: "Ayşe Nur Kuru",
+        role: "Kına Gelini",
+        content: "Ben o kadar eğlenmişim ki yeni kendime geldim. Sizi gerçekten çok sevdim her istediğimi en güzel şekilde gördüm, isteklerim ne güzel anlaşılmış dedim. Salona girdiğimde o kadar mutlu oldum ki bütün stres heyecan gitti yerini mutluluk aldı. Hiç unutamayacağım bir kına gecesi yaşattınız, her gelen biz böyle güzel bir kınaya gitmedik demişler. Enerjinizin bana destek oluşu çok güzeldi, şahaneydiniz."
+    },
 ];
