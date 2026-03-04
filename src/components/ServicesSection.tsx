@@ -4,7 +4,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { services } from "@/data/services";
 import { ArrowUpRight } from "lucide-react";
 import React, { useRef } from "react";
-import Link from "next/link";
 
 function ServiceCard({ service, index }: { service: any; index: number }) {
     const isEven = index % 2 === 1;
@@ -18,7 +17,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
     const yImage = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
 
     return (
-        <Link href={`/${service.slug}`} className={`group relative rounded-[2rem] md:rounded-[2.5rem] overflow-hidden bg-surface flex flex-col h-[50vh] sm:h-[60vh] md:h-[80vh] cursor-pointer block ${isEven ? 'md:mt-24' : ''}`}>
+        <div className={`group relative rounded-[2rem] md:rounded-[2.5rem] overflow-hidden bg-surface flex flex-col h-[50vh] sm:h-[60vh] md:h-[80vh] block ${isEven ? 'md:mt-24' : ''}`}>
             <motion.div
                 ref={ref}
                 initial={{ opacity: 0, y: 50, skewY: 2 }}
@@ -66,9 +65,9 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
                         <h3 className="text-xl sm:text-2xl md:text-3xl font-heading text-secondary mb-1 md:mb-2">{service.title}</h3>
                         <p className="text-foreground text-xs sm:text-sm font-light leading-relaxed hidden sm:block">{service.subtitle}</p>
 
-                        {/* Exaggerated line link */}
-                        <div className="mt-4 flex items-center gap-2 overflow-hidden text-sm font-medium text-secondary group-hover:text-primary transition-colors cursor-pointer">
-                            <span>Detayları Keşfet</span>
+                        {/* Decortative Label */}
+                        <div className="mt-4 flex items-center gap-2 overflow-hidden text-sm font-medium text-secondary group-hover:text-primary transition-colors">
+                            <span>A46 Deneyimi</span>
                         </div>
                     </div>
 
@@ -77,7 +76,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
                     </div>
                 </div>
             </motion.div>
-        </Link>
+        </div>
     );
 }
 
