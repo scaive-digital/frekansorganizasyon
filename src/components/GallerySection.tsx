@@ -26,13 +26,13 @@ function GalleryItemCard({ item, index }: { item: any; index: number }) {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
             className={`group relative flex flex-col gap-6 md:gap-8 
-                ${isGiant ? 'w-full' : (isPortrait ? 'w-[85%] md:w-[50%]' : 'w-[90%] md:w-[75%]')} 
-                ${isEven && !isGiant ? 'self-end' : 'self-start'}
+                ${isGiant ? 'w-full' : (isPortrait ? 'w-full md:w-[50%]' : 'w-full md:w-[75%]')} 
+                ${isEven && !isGiant ? 'md:self-end' : 'md:self-start'}
             `}
         >
             {/* Görsel Paneli */}
             <div className={`relative overflow-hidden bg-surface rounded-[1.5rem] md:rounded-[2.5rem]
-                ${isGiant ? 'h-[50vh] md:h-[90vh]' : (isPortrait ? 'h-[60vh] md:h-[80vh]' : 'h-[40vh] md:h-[70vh]')}
+                ${isGiant ? 'h-[50vh] md:h-[90vh]' : (isPortrait ? 'h-[55vh] md:h-[80vh]' : 'h-[40vh] md:h-[70vh]')}
             `}>
                 {/* Wipe Reveal Animasyonu */}
                 <motion.div
@@ -44,7 +44,7 @@ function GalleryItemCard({ item, index }: { item: any; index: number }) {
                     className="absolute inset-0 bg-secondary z-30 pointer-events-none"
                 />
 
-                <motion.div style={{ y: yImage }} className="absolute inset-0 z-0 w-full h-[120%] -top-[10%]">
+                <motion.div style={{ y: yImage }} className="absolute inset-0 z-0 w-full h-[120%] -top-[10%] bg-muted">
                     {item.video ? (
                         <video
                             src={item.video}
@@ -52,6 +52,7 @@ function GalleryItemCard({ item, index }: { item: any; index: number }) {
                             loop
                             muted
                             playsInline
+                            poster={item.image}
                             className="w-full h-full object-cover transition-transform duration-[2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
                         />
                     ) : (
@@ -83,10 +84,12 @@ function GalleryItemCard({ item, index }: { item: any; index: number }) {
     );
 }
 
-export function GallerySection({ filterType }: { filterType?: "weddings" | "corporate" | "henna" | "engagement" | "all" }) {
+export function GallerySection({ filterType, limit }: { filterType?: "weddings" | "corporate" | "henna" | "engagement" | "all", limit?: number }) {
     const filteredItems = filterType && filterType !== "all"
         ? galleryItems.filter(item => item.filterType === filterType)
         : galleryItems;
+
+    const displayedItems = limit ? filteredItems.slice(0, limit) : filteredItems;
 
     if (filteredItems.length === 0) return null; // Prevent showing empty section
 
@@ -119,8 +122,8 @@ export function GallerySection({ filterType }: { filterType?: "weddings" | "corp
                 </div>
 
                 {/* A46 Style Asymmetric Spotlight List */}
-                <div className="flex flex-col gap-24 md:gap-40 w-full">
-                    {filteredItems.map((item, index) => (
+                <div className="flex flex-col gap-16 md:gap-40 w-full mb-12">
+                    {displayedItems.map((item, index) => (
                         <GalleryItemCard key={item.id} item={item} index={index} />
                     ))}
                 </div>

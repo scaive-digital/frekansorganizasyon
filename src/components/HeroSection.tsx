@@ -49,9 +49,10 @@ export function HeroSection() {
                             muted
                             loop
                             playsInline
+                            poster="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000"
                             className="w-full h-full object-cover opacity-70 mix-blend-overlay"
                         >
-                            <source src="https://cdn.pixabay.com/video/2019/11/14/29166-373289060_large.mp4" type="video/mp4" />
+                            <source src="/videos/wedding.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </motion.div>
@@ -66,12 +67,12 @@ export function HeroSection() {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                        className="font-script text-primary text-4xl md:text-5xl lg:text-6xl mb-4 font-normal tracking-wide drop-shadow-md"
+                        className="font-script text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 font-normal tracking-wide drop-shadow-md"
                     >
                         Rüya Gibi Bir An
                     </motion.span>
 
-                    <h1 className="text-white font-heading text-6xl md:text-8xl lg:text-[10rem] font-medium leading-[1.0] tracking-tight">
+                    <h1 className="text-white font-heading text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] font-medium leading-[1.0] tracking-tight">
                         <div className="overflow-hidden pb-1 md:pb-4">
                             <motion.div
                                 initial={{ y: "100%" }}

@@ -18,7 +18,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
     const yImage = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
 
     return (
-        <Link href={`/${service.slug}`} className={`group relative rounded-[2rem] md:rounded-[2.5rem] overflow-hidden bg-surface flex flex-col h-[60vh] md:h-[80vh] cursor-pointer block ${isEven ? 'md:mt-24' : ''}`}>
+        <Link href={`/${service.slug}`} className={`group relative rounded-[2rem] md:rounded-[2.5rem] overflow-hidden bg-surface flex flex-col h-[50vh] sm:h-[60vh] md:h-[80vh] cursor-pointer block ${isEven ? 'md:mt-24' : ''}`}>
             <motion.div
                 ref={ref}
                 initial={{ opacity: 0, y: 50, skewY: 2 }}
@@ -38,7 +38,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
                 />
 
                 {/* Background Image/Video with Parallax */}
-                <motion.div style={{ y: yImage }} className="absolute inset-0 z-0 w-full h-[130%] -top-[15%]">
+                <motion.div style={{ y: yImage }} className="absolute inset-0 z-0 w-full h-[130%] -top-[15%] bg-muted">
                     <div className="absolute inset-0 bg-black/20 z-10 transition-colors duration-700 group-hover:bg-black/0" />
                     {service.video ? (
                         <video
@@ -47,6 +47,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
                             loop
                             muted
                             playsInline
+                            poster={service.image}
                             className="w-full h-full object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
                         />
                     ) : (
@@ -60,10 +61,10 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
 
                 {/* Floating Glass Labels (A46 Style) */}
                 <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 z-20 flex flex-col md:flex-row md:items-end justify-between gap-4 pointer-events-none group-hover:pointer-events-auto">
-                    <div className="bg-white/95 backdrop-blur-xl p-6 rounded-2xl md:rounded-3xl max-w-sm flex-1 transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-2">
-                        <span className="text-primary text-[10px] tracking-[0.2em] uppercase font-bold mb-3 block">0{index + 1}</span>
-                        <h3 className="text-2xl md:text-3xl font-heading text-secondary mb-2">{service.title}</h3>
-                        <p className="text-foreground text-sm font-light leading-relaxed hidden md:block">{service.subtitle}</p>
+                    <div className="bg-white/95 backdrop-blur-xl p-5 md:p-6 rounded-2xl md:rounded-3xl max-w-sm flex-1 transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-2">
+                        <span className="text-primary text-[10px] tracking-[0.2em] uppercase font-bold mb-2 md:mb-3 block">0{index + 1}</span>
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-heading text-secondary mb-1 md:mb-2">{service.title}</h3>
+                        <p className="text-foreground text-xs sm:text-sm font-light leading-relaxed hidden sm:block">{service.subtitle}</p>
 
                         {/* Exaggerated line link */}
                         <div className="mt-4 flex items-center gap-2 overflow-hidden text-sm font-medium text-secondary group-hover:text-primary transition-colors cursor-pointer">
@@ -92,7 +93,7 @@ export function ServicesSection() {
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                         className="inline-block"
                     >
-                        <h2 className="text-4xl md:text-6xl lg:text-[5.5rem] font-heading text-secondary font-medium tracking-tight leading-[1.1]">
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] font-heading text-secondary font-medium tracking-tight leading-[1.1]">
                             Özel <span className="text-primary italic font-light">Hizmetler</span>
                         </h2>
                     </motion.div>
