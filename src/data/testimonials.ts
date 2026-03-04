@@ -108,4 +108,28 @@ export const testimonials: Testimonial[] = [
         role: "Gelin",
         content: "Her şey için çok çok çok teşekkür ederim çok çok mutlu ettin beni, verdiğin güvenden daha fazlasını verdin hissettirdin tanıştığıma çok çok memnun oldum kınamda kesin düğünde de olması için uğraşacağım kesinlikle sana teslim etmek isterim."
     },
+    {
+        id: "t18",
+        name: "Gizem Uçar",
+        role: "Kına Gelini",
+        content: "Canım Ayşe, dün akşam her şey tek kelimeyle muhteşemdi. Dansta beni yalnız bırakmayan kızlara, arka planda destekleyen Abdullah beye, enerjiyi düşürmeyen DJ Merveye ve yıllarca hayalini kurduğum kınamda beni prensesler gibi hissettiren, bir peri masalı hazırlayan ve organize eden sana, ablana ve ekip arkadaşlarına sonsuz teşekkürler. Hayallerimi gerçekleştirdiğiniz için minnettarım."
+    },
+    {
+        id: "t19",
+        name: "Zeynep",
+        role: "Nişan Gelini",
+        content: "Ayşe hanımcım günaydın, nişan günüm için çok teşekkür ederim gerçekten hiç bir eksik yoktu iyi ki sizi tercih etmişiz samimiyetiniz, güzel enerjiniz ve verdiğiniz güven için de ayrıca teşekkür ediyorum emeğinize sağlık kınada ve düğünde de görüşmek nasip olur inşallah."
+    },
+    {
+        id: "t20",
+        name: "Ebrar Çıtak",
+        role: "Gelin",
+        content: "Yaaaa çok çok teşekkür ederim bitanem, her şey çok güzeldi çok eğlendim ellerinize sağlık çok çok beğendim. Herkes de çok beğenmiş durmadan söylüyor misafirler çok teşekkür ederiz ellerinize sağlık."
+    },
+    {
+        id: "t21",
+        name: "Gelin",
+        role: "Gelin",
+        content: "Ayşe hanım mükemmeldi sizi iyi ki seçmişim ya masal gibi bir gece oldu çok çok çok teşekkür ediyorum emeklerinize sağlık iyi ki varsınız kusursuzdu ya."
+    },
 ];
