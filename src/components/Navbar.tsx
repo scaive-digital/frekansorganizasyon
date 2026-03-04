@@ -10,7 +10,7 @@ const links = [
     { name: "Ana Sayfa", href: "/" },
     { name: "Düğün", href: "/weddings" },
     { name: "Kurumsal", href: "/corporate" },
-    { name: "İletişim", href: "/#contact" },
+    { name: "İletişim", href: "/contact" },
 ];
 
 export function Navbar() {
