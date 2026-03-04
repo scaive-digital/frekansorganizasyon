@@ -45,11 +45,22 @@ function GalleryItemCard({ item, index }: { item: any; index: number }) {
                 />
 
                 <motion.div style={{ y: yImage }} className="absolute inset-0 z-0 w-full h-[120%] -top-[10%]">
-                    <img
-                        src={item.image}
-                        alt={item.title}
-                        className="w-full h-full object-cover transition-transform duration-[2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
-                    />
+                    {item.video ? (
+                        <video
+                            src={item.video}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-full object-cover transition-transform duration-[2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+                        />
+                    ) : (
+                        <img
+                            src={item.image}
+                            alt={item.title}
+                            className="w-full h-full object-cover transition-transform duration-[2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+                        />
+                    )}
                 </motion.div>
             </div>
 

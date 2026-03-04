@@ -37,14 +37,25 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
                     className="absolute inset-0 bg-secondary z-30 pointer-events-none"
                 />
 
-                {/* Background Image with Parallax */}
+                {/* Background Image/Video with Parallax */}
                 <motion.div style={{ y: yImage }} className="absolute inset-0 z-0 w-full h-[130%] -top-[15%]">
                     <div className="absolute inset-0 bg-black/20 z-10 transition-colors duration-700 group-hover:bg-black/0" />
-                    <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-full object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
-                    />
+                    {service.video ? (
+                        <video
+                            src={service.video}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-full object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+                        />
+                    ) : (
+                        <img
+                            src={service.image}
+                            alt={service.title}
+                            className="w-full h-full object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+                        />
+                    )}
                 </motion.div>
 
                 {/* Floating Glass Labels (A46 Style) */}
