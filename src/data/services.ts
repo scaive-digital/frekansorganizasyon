@@ -20,7 +20,7 @@ export const services: Service[] = [
         description: "Kusursuz planlama, zarif detaylar ve profesyonel ekibimizle hayalinizdeki düğünü gerçeğe dönüştürüyoruz. Mekan süslemesinden müzik seçimine kadar her anınızı özenle tasarlıyoruz.",
         icon: "rings",
         image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000",
-        video: "https://cdn.pixabay.com/video/2019/11/14/29166-373289060_large.mp4",
+        video: "https://assets.mixkit.co/videos/preview/mixkit-wedding-couple-walking-in-a-park-14811-large.mp4",
         features: ["Mekan Süsleme", "Ses & Işık Sistemleri", "Fotoğraf & Video", "Gelin Yolu", "LCV Yönetimi"],
         category: "weddings"
     },
@@ -43,7 +43,7 @@ export const services: Service[] = [
         description: "Lansman, şirket yemeği, bayi toplantıları ve kurumsal partilerde markanıza uygun 'A46' standardında premium konseptler.",
         icon: "building",
         image: "https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?auto=format&fit=crop&q=80&w=2000",
-        video: "https://cdn.pixabay.com/video/2016/09/21/5412-183786196_large.mp4",
+        video: "https://assets.mixkit.co/videos/preview/mixkit-business-people-walking-in-a-financial-district-4148-large.mp4",
         features: ["Sahne Tasarımı", "Catering", "Karşılama", "Lansman Konsepti", "Teknik Prodüksiyon"],
         category: "corporate"
     },

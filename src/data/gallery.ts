@@ -26,7 +26,7 @@ export const galleryItems: GalleryItem[] = [
         category: "Lüks Düğün",
         filterType: "weddings",
         image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000",
-        video: "https://cdn.pixabay.com/video/2019/11/14/29166-373289060_large.mp4",
+        video: "https://assets.mixkit.co/videos/preview/mixkit-wedding-couple-walking-in-a-park-14811-large.mp4",
     },
     {
         id: "g3",
@@ -42,7 +42,7 @@ export const galleryItems: GalleryItem[] = [
         category: "Kurumsal",
         filterType: "corporate",
         image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=2000",
-        video: "https://cdn.pixabay.com/video/2016/09/21/5412-183786196_large.mp4",
+        video: "https://assets.mixkit.co/videos/preview/mixkit-business-people-walking-in-a-financial-district-4148-large.mp4",
     },
     {
         id: "g5",
