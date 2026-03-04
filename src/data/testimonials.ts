@@ -54,4 +54,16 @@ export const testimonials: Testimonial[] = [
         role: "Kına Gelini",
         content: "15 günde nasıl bu kadar güzel bir kına organize ettiniz siz? Emeğinize yüreğinize sağlık, her konuştuğumuzda beni rahatlattın yanımda oldun. Hayalimden de güzel bir kına gecesi yaşattınız bana, o kadar güzeldi ki inanılmazdı bütün detaylar harikaydı kusursuzdu. İyi ki Frekans dediğim bir gece yaşattınız."
     },
+    {
+        id: "t9",
+        name: "Ayşe",
+        role: "Kına Gelini",
+        content: "Salona ilk girdiğimdeki yüz ifademi hatırladığına eminim zaten ikimizin de gözleri doldu... Hayalimden de güzel bir organizasyon yaptınız bana. Hep bana güven ben halledeceğim dedin öyle de oldu, her aradığımda aynı özenle açtın o telefonu ne kadar minnettar olsam az. Hayatımda daha tatlı 2 kız kardeş tanımadım, işinizde çok iyisiniz."
+    },
+    {
+        id: "t10",
+        name: "Emine",
+        role: "Gelin",
+        content: "En büyük teşekkürümüz size, her şey muazzam ötesiydi, masal diyarında gibi hissettirdiniz adeta hem kına hem düğün. Özellikle o canlı çiçekler her yer mis gibi kokuyordu. Elinize emeğinize yüreğinize sağlık. İşinizi severek yapıyorsunuz ve bu kadar yansıyor ki iyi ki varsınız."
+    },
 ];
