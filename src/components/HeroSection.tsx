@@ -27,7 +27,7 @@ export function HeroSection() {
 
     return (
         <section ref={containerRef} className="relative w-full min-h-screen bg-background pt-28 pb-6 px-4 md:px-6 flex flex-col overflow-hidden">
-            {/* The Inset Frame (A46 Style) with Scroll Transformation */}
+            {/* The Inset Frame with Scroll Transformation */}
             <motion.div
                 style={{ scale, borderRadius }}
                 className="relative flex-1 w-full overflow-hidden flex items-center justify-center bg-secondary shadow-2xl origin-top"
@@ -94,7 +94,7 @@ export function HeroSection() {
                     </h1>
                 </motion.div>
 
-                {/* A46 Style Scroll Down Indicator */}
+                {/* Scroll Down Indicator */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

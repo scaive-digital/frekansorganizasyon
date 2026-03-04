@@ -40,7 +40,7 @@ export const services: Service[] = [
         slug: "corporate",
         title: "Kurumsal Etkinlikler",
         subtitle: "Markanızın gücünü yansıtan profesyonel davetler",
-        description: "Lansman, şirket yemeği, bayi toplantıları ve kurumsal partilerde markanıza uygun 'A46' standardında premium konseptler.",
+        description: "Lansman, şirket yemeği, bayi toplantıları ve kurumsal partilerde markanıza uygun premium konseptler.",
         icon: "building",
         image: "https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?auto=format&fit=crop&q=80&w=2000",
         video: "/videos/corporate.mp4",

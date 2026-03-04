@@ -58,7 +58,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
                     )}
                 </motion.div>
 
-                {/* Floating Glass Labels (A46 Style) */}
+                {/* Floating Glass Labels */}
                 <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8 z-20 flex flex-col md:flex-row md:items-end justify-between gap-4 pointer-events-none group-hover:pointer-events-auto">
                     <div className="bg-white/95 backdrop-blur-xl p-5 md:p-6 rounded-2xl md:rounded-3xl max-w-sm flex-1 transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-2">
                         <span className="text-primary text-[10px] tracking-[0.2em] uppercase font-bold mb-2 md:mb-3 block">0{index + 1}</span>
@@ -67,7 +67,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
 
                         {/* Decortative Label */}
                         <div className="mt-4 flex items-center gap-2 overflow-hidden text-sm font-medium text-secondary group-hover:text-primary transition-colors">
-                            <span>A46 Deneyimi</span>
+                            <span>Frekans Deneyimi</span>
                         </div>
                     </div>
 
@@ -107,7 +107,7 @@ export function ServicesSection() {
                     </motion.p>
                 </div>
 
-                {/* A46 Style Split Screen Grid */}
+                {/* Split Screen Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                     {services.map((service, index) => (
                         <ServiceCard key={service.id} service={service} index={index} />

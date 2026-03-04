@@ -7,7 +7,8 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         const lenis = new Lenis({
             duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // A46 style smooth easing
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // smooth easing
+            smoothWheel: true,
             orientation: "vertical",
             gestureOrientation: "vertical",
             wheelMultiplier: 1,

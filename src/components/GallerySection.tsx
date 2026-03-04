@@ -65,7 +65,7 @@ function GalleryItemCard({ item, index }: { item: any; index: number }) {
                 </motion.div>
             </div>
 
-            {/* Typography under Image (A46 Premium style) */}
+            {/* Typography under Image */}
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 px-2">
                 <div>
                     <h3 className="text-secondary font-heading text-3xl md:text-5xl tracking-tight mb-2 uppercase group-hover:text-primary transition-colors duration-500">
@@ -121,7 +121,7 @@ export function GallerySection({ filterType, limit }: { filterType?: "weddings" 
                     </motion.div>
                 </div>
 
-                {/* A46 Style Asymmetric Spotlight List */}
+                {/* Asymmetric Spotlight List */}
                 <div className="flex flex-col gap-16 md:gap-40 w-full mb-12">
                     {displayedItems.map((item, index) => (
                         <GalleryItemCard key={item.id} item={item} index={index} />
