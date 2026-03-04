@@ -8,32 +8,32 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
     {
         id: "t1",
-        name: "Ayşe & Burak",
-        role: "Düğün Çifti",
-        content: "Hayal ettiğimizden çok daha fazlasıydı. Her detay o kadar özenliydi ki, bize sadece o anın tadını çıkarmak kaldı. Ekibin profesyonelliği muazzamdı."
+        name: "Sümeyye",
+        role: "Düğün Gelini",
+        content: "Ayşe hanım dün için çok teşekkür ederiz her şey mükemmeldi. Bu süreçte resmen bana danışman ve süreç arkadaşı oldunuz. Hiç bitmeyen enerjiniz her zaman moral motivasyon oldu bana. Ellerinize emeğinize sağlık, sizi çok seviyoruz."
     },
     {
         id: "t2",
-        name: "Zeynep Yılmaz",
-        role: "Kurumsal Etkinlik Yöneticisi",
-        content: "Şirketimizin yıl sonu galasında Frekans Organizasyon ile çalıştık. Hem mekan tasarımı hem de akış yönetimi kusursuzdu. Kesinlikle tavsiye ederim."
+        name: "Zişan Arı",
+        role: "Kına Gelini",
+        content: "Ayşeciğim, Denizciğim siz neler yaptınız neler... Hala inanamıyorum, aşırı mutluyum. İyi ki siz, hayallerimin ötesindeydi her şey. Tüm süreç ve enerjiniz için çok çok teşekkür ederim."
     },
     {
         id: "t3",
-        name: "Elif & Can",
-        role: "Nişan Çifti",
-        content: "Söz ve nişan organizasyonumuz için anlaştığımızda çok heyecanlıydık ama ekip bizi o kadar rahatlattı ki... Herkes konseptin zarafetini konuştu."
+        name: "Hülya",
+        role: "Gelin",
+        content: "Dün gece neydi öyle! O kadar özenliydi ki her detaya ayrı ayrı aşık oldum. Masalar, süslemeler, ışıklar, atmosfer... hepsi birbirinden güzeldi! Enerjiniz ve samimiyetiniz içimi öyle rahatlattı ki süreç boyu hiç stres yaşamadım. Sadece işinizi yapmakla kalmadınız, kalbinizi de koydunuz. Bana hayatım boyunca unutamayacağım bir gece yaşattınız, çok teşekkürler."
     },
     {
         id: "t4",
-        name: "Merve Çelik",
-        role: "Kına Gecesi Gelin Adayı",
-        content: "Geleneksel motifleri bu kadar modern ve şık bir şekilde harmanlamaları tek kelimeyle harikaydı. Unutulmaz bir gece yaşadık."
+        name: "Betül",
+        role: "Gelin",
+        content: "Ayşe hanım, Deniz hanım, her şey o kadar güzel ve kusursuzdu ki, bu özel günümüzü unutulmaz kıldığınız için size gönülden teşekkür ederim. Detaylara gösterdiğiniz özen, güler yüzünüz ve profesyonelliğinizle her şeyi bizim yerimize düşünüp hayal ettiğimizden bile güzel hale getirdiniz."
     },
     {
         id: "t5",
-        name: "Buse & Kerem",
-        role: "Düğün Çifti",
-        content: "Kusursuz planlama, güler yüzlü ekip ve vizyoner tasarım anlayışı... En mutlu günümüzü bir masala dönüştürdükleri için minnettarız."
+        name: "Basel",
+        role: "Düğün Sahibi",
+        content: "Dünkü muhteşem organizasyon ve verdiğiniz emekler için hepinize teşekkür ederiz. Gerçekten her şey kusursuzdu. Günümüzü unutulmaz kılmak için gösterdiğiniz çaba bizim için çok değerliydi. Tüm misafirlerimiz geceyi büyük bir mutlulukla ve keyifle geçirdi. Emeğinize, ilginize ve desteğinize minnettarız."
     },
 ];
