@@ -1,9 +1,22 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { useRef } from "react";
 
 export function HeroSection() {
+    const containerRef = useRef<HTMLDivElement>(null);
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start start", "end start"]
+    });
+
+    // Parallax & Shader-like transformation values
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.85]);
+    const borderRadius = useTransform(scrollYProgress, [0, 1], ["2rem", "6rem"]);
+    const yVideo = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+    const opacityText = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+    const yText = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
     // Scroll function for the down arrow
     const scrollToServices = () => {
         const servicesSection = document.getElementById('services');
@@ -13,28 +26,42 @@ export function HeroSection() {
     };
 
     return (
-        <section className="relative w-full min-h-screen bg-background pt-28 pb-6 px-4 md:px-6 flex flex-col">
-            {/* The Inset Frame (A46 Style) */}
-            <div className="relative flex-1 w-full rounded-[2rem] md:rounded-[3rem] overflow-hidden flex items-center justify-center bg-secondary shadow-lg">
+        <section ref={containerRef} className="relative w-full min-h-screen bg-background pt-28 pb-6 px-4 md:px-6 flex flex-col overflow-hidden">
+            {/* The Inset Frame (A46 Style) with Scroll Transformation */}
+            <motion.div
+                style={{ scale, borderRadius }}
+                className="relative flex-1 w-full overflow-hidden flex items-center justify-center bg-secondary shadow-2xl origin-top"
+            >
 
-                {/* Background Image with Overlay */}
-                <div className="absolute inset-0 z-0">
+                {/* Background Video with Parallax */}
+                <motion.div
+                    style={{ y: yVideo }}
+                    className="absolute inset-0 z-0 w-full h-[120%]" // Extra height for parallax
+                >
                     <motion.div
-                        initial={{ opacity: 0, scale: 1.05 }}
+                        initial={{ opacity: 0, scale: 1.1 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 2, ease: "easeOut" }}
+                        transition={{ duration: 2.5, ease: [0.16, 1, 0.3, 1] }}
                         className="w-full h-full"
                     >
-                        <img
-                            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2069&auto=format&fit=crop"
-                            alt="Frekans Organizasyon"
-                            className="w-full h-full object-cover opacity-60 mix-blend-overlay"
-                        />
+                        <video
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-full h-full object-cover opacity-70 mix-blend-overlay"
+                        >
+                            <source src="https://cdn.pixabay.com/video/2019/11/14/29166-373289060_large.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </motion.div>
-                </div>
+                </motion.div>
 
                 {/* Content */}
-                <div className="relative z-10 text-center flex flex-col items-center w-full px-4">
+                <motion.div
+                    style={{ opacity: opacityText, y: yText }}
+                    className="relative z-10 text-center flex flex-col items-center w-full px-4"
+                >
                     <motion.span
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -64,7 +91,7 @@ export function HeroSection() {
                             </motion.div>
                         </div>
                     </h1>
-                </div>
+                </motion.div>
 
                 {/* A46 Style Scroll Down Indicator */}
                 <motion.div
@@ -87,7 +114,7 @@ export function HeroSection() {
                         </motion.div>
                     </button>
                 </motion.div>
-            </div>
+            </motion.div>
         </section>
     );
 }

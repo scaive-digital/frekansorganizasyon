@@ -7,10 +7,10 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const links = [
-    { name: "Ana Sayfa", href: "#" },
-    { name: "Hizmetler", href: "#services" },
-    { name: "Portfolyo", href: "#gallery" },
-    { name: "İletişim", href: "#contact" },
+    { name: "Ana Sayfa", href: "/" },
+    { name: "Düğün", href: "/weddings" },
+    { name: "Kurumsal", href: "/corporate" },
+    { name: "İletişim", href: "/#contact" },
 ];
 
 export function Navbar() {

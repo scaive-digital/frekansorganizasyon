@@ -69,6 +69,37 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  /* Lenis Strict Smoothing Styles */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
+  /* Disable scrollbar for minimal design */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  * {
+    scrollbar-width: none;
+  }
+
   /* Applied the requested noise texture for a luxury editorial feel */
   body::before {
     content: "";
