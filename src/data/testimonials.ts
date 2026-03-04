@@ -36,4 +36,22 @@ export const testimonials: Testimonial[] = [
         role: "Düğün Sahibi",
         content: "Dünkü muhteşem organizasyon ve verdiğiniz emekler için hepinize teşekkür ederiz. Gerçekten her şey kusursuzdu. Günümüzü unutulmaz kılmak için gösterdiğiniz çaba bizim için çok değerliydi. Tüm misafirlerimiz geceyi büyük bir mutlulukla ve keyifle geçirdi. Emeğinize, ilginize ve desteğinize minnettarız."
     },
+    {
+        id: "t6",
+        name: "Sema Düşünen",
+        role: "Gelin",
+        content: "Sevgili Ayşe ve Deniz bu rüya gibi düğünü bize yaşattığınız için çok teşekkür ederiz. Sizlerle çalıştığımız süreçte bizi hiç üzmediniz, hayal kırıklığına uğratmadınız yine olsa yine tercihim siz olursunuz. İyi ki yollarımız kesişip tanışmışız. Dilerim başarılarınız daim hayalleriniz gerçek olsun."
+    },
+    {
+        id: "t7",
+        name: "Serra Şeyma Acar",
+        role: "Gelin",
+        content: "Hayatımın en büyük şansını sizi tanıyarak kullandım. Hayatımın en güzel en özel gününü sizin sayenizde mükemmel geçirdim. Her şey hayallerimin ötesinde kusursuzdu. Aile olduk, arkadaş olduk, abla kardeş olduk. Herkes tüm gece salona organizasyona hayran kaldı. İyi ki yollarımız kesişmiş, iyi ki tanışmışız."
+    },
+    {
+        id: "t8",
+        name: "Eda",
+        role: "Kına Gelini",
+        content: "15 günde nasıl bu kadar güzel bir kına organize ettiniz siz? Emeğinize yüreğinize sağlık, her konuştuğumuzda beni rahatlattın yanımda oldun. Hayalimden de güzel bir kına gecesi yaşattınız bana, o kadar güzeldi ki inanılmazdı bütün detaylar harikaydı kusursuzdu. İyi ki Frekans dediğim bir gece yaşattınız."
+    },
 ];
