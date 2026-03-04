@@ -72,7 +72,13 @@ function GalleryItemCard({ item, index }: { item: any; index: number }) {
     );
 }
 
-export function GallerySection() {
+export function GallerySection({ filterType }: { filterType?: "weddings" | "corporate" | "henna" | "engagement" | "all" }) {
+    const filteredItems = filterType && filterType !== "all"
+        ? galleryItems.filter(item => item.filterType === filterType)
+        : galleryItems;
+
+    if (filteredItems.length === 0) return null; // Prevent showing empty section
+
     return (
         <section id="gallery" className="py-24 md:py-32 bg-background relative overflow-hidden">
             <div className="max-w-[96%] mx-auto px-4 md:px-8 relative z-10">
@@ -84,7 +90,7 @@ export function GallerySection() {
                         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                     >
                         <h2 className="text-5xl md:text-7xl lg:text-[8rem] font-heading text-secondary font-medium tracking-tight uppercase leading-[0.9]">
-                            Spotlight
+                            {filterType && filterType !== "all" ? "Örnekler" : "Spotlight"}
                         </h2>
                     </motion.div>
                     <motion.div
@@ -103,7 +109,7 @@ export function GallerySection() {
 
                 {/* A46 Style Asymmetric Spotlight List */}
                 <div className="flex flex-col gap-24 md:gap-40 w-full">
-                    {galleryItems.map((item, index) => (
+                    {filteredItems.map((item, index) => (
                         <GalleryItemCard key={item.id} item={item} index={index} />
                     ))}
                 </div>

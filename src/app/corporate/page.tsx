@@ -33,7 +33,7 @@ export default function CorporatePage() {
                 </motion.div>
             </div>
 
-            <GallerySection />
+            <GallerySection filterType="corporate" />
         </main>
     );
 }
