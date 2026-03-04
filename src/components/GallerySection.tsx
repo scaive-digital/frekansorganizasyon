@@ -114,19 +114,6 @@ export function GallerySection({ filterType }: { filterType?: "weddings" | "corp
                     ))}
                 </div>
 
-                {/* Explore More Button */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.5 }}
-                    className="mt-32 text-center"
-                >
-                    <button className="group relative overflow-hidden px-14 py-6 rounded-full border border-border bg-surface text-secondary font-medium tracking-[0.2em] uppercase text-sm transition-all hover:scale-105 active:scale-95 shadow-sm">
-                        <span className="absolute inset-0 w-full h-full bg-secondary translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] rounded-full" />
-                        <span className="relative z-10 group-hover:text-white transition-colors duration-300">Tüm Galeriyi İncele</span>
-                    </button>
-                </motion.div>
             </div>
         </section>
     );
