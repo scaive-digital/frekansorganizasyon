@@ -22,43 +22,50 @@ export function TestimonialsSection() {
                     </motion.div>
                 </div>
 
-                <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 hide-scrollbar">
-                    {testimonials.map((testimonial, index) => (
-                        <motion.div
-                            key={testimonial.id}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-50px" }}
-                            transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-                            className="bg-background rounded-[2rem] p-8 md:p-12 min-w-[280px] sm:min-w-[350px] md:min-w-[450px] snap-center flex flex-col justify-between border border-border shadow-sm hover:shadow-md transition-shadow relative"
-                        >
-                            <Quote className="text-primary/10 absolute top-8 right-8 w-16 h-16" />
-                            <div className="mb-8 relative z-10">
-                                <p className="text-foreground text-base md:text-lg font-light leading-relaxed italic">
-                                    "{testimonial.content}"
-                                </p>
-                            </div>
-                            <div className="flex items-center gap-4 relative z-10">
-                                <div className="w-12 h-12 rounded-full overflow-hidden border border-border shrink-0 bg-surface flex items-center justify-center text-secondary font-heading text-lg">
-                                    {testimonial.name.charAt(0)}
+                <div className="relative flex overflow-hidden w-full py-4 -mx-4 px-4 md:-mx-8 md:px-8">
+                    {/* Add fade masks on sides for premium look */}
+                    <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-surface to-transparent z-20 pointer-events-none" />
+                    <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-surface to-transparent z-20 pointer-events-none" />
+
+                    <div className="flex animate-marquee hover:[animation-play-state:paused] w-max select-none">
+                        {[...testimonials, ...testimonials].map((testimonial, index) => (
+                            <div
+                                key={`${testimonial.id}-${index}`}
+                                className="mx-3 bg-background rounded-[2rem] p-8 md:p-12 w-[300px] sm:w-[350px] md:w-[450px] shrink-0 flex flex-col justify-between border border-border/50 shadow-sm hover:shadow-md transition-all relative"
+                            >
+                                <Quote className="text-primary/10 absolute top-8 right-8 w-16 h-16 pointer-events-none" />
+                                <div className="mb-8 relative z-10 pointer-events-none mt-2">
+                                    <p className="text-foreground/90 text-base md:text-lg font-light leading-relaxed italic">
+                                        "{testimonial.content}"
+                                    </p>
                                 </div>
-                                <div>
-                                    <h4 className="text-secondary font-heading font-medium text-lg">{testimonial.name}</h4>
-                                    <p className="text-primary text-xs uppercase tracking-widest mt-1">{testimonial.role}</p>
+                                <div className="flex items-center gap-4 relative z-10 pointer-events-none">
+                                    <div className="w-12 h-12 rounded-full shadow-sm border border-border shrink-0 bg-surface flex items-center justify-center text-primary font-heading text-xl">
+                                        {testimonial.name.charAt(0)}
+                                    </div>
+                                    <div>
+                                        <h4 className="text-secondary font-heading font-medium text-lg tracking-wide">{testimonial.name}</h4>
+                                        {/* Removed Role Text per User Request */}
+                                    </div>
                                 </div>
                             </div>
-                        </motion.div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
 
             <style jsx global>{`
-                .hide-scrollbar::-webkit-scrollbar {
-                    display: none;
+                @keyframes marquee {
+                    0% {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    100% {
+                        transform: translate3d(-50%, 0, 0);
+                    }
                 }
-                .hide-scrollbar {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
+                .animate-marquee {
+                    animation: marquee 100s linear infinite;
+                    will-change: transform;
                 }
             `}</style>
         </section>

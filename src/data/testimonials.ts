@@ -132,4 +132,28 @@ export const testimonials: Testimonial[] = [
         role: "Gelin",
         content: "Ayşe hanım mükemmeldi sizi iyi ki seçmişim ya masal gibi bir gece oldu çok çok çok teşekkür ediyorum emeklerinize sağlık iyi ki varsınız kusursuzdu ya."
     },
+    {
+        id: "t22",
+        name: "Meltem",
+        role: "Gelin",
+        content: "Bugün benim ve Kaan için şahane günü planlayıp eksiksiz tamamladığınız için emeklerinize sağlık, umarım yollarımız bi daha kesişir herkese çok ama çok teşekkür ederim hayal gibi bir gündü."
+    },
+    {
+        id: "t23",
+        name: "Zeynep Demirci",
+        role: "Kına Gelini",
+        content: "Yaaa Ayşe hanımm çok duygusalım zaten bir de bu cümleleriniz, çok kıymetlisiniz gerçekten. Her şey nasıl harikaydı, hayal ettiklerimizden kat kat daha güzeldi. Desteğinizi hiç esirgemediniz her anımda yanımda olan ekibiniz ve Deniz hanım ve Begüm hanımın en büyük teşekkürlerimden biri de onlara iyi ki yollarımız kesişti, iyi ki siz."
+    },
+    {
+        id: "t24",
+        name: "Gelin",
+        role: "Gelin",
+        content: "Ayşe hanımm elinize emeğinize sağlık her şey çok güzel olmuştu salona bayıldık bambaşka bi yere dönüşmüş resmen. Gelen bütün misafirlerim masa süslemeleri olsun her şeyi çok beğendiler hepsi dile getirdi özenle hazırlamışsınız her şeyi çok ama çok teşekkür ederim beni çok mutlu ettiniz."
+    },
+    {
+        id: "t25",
+        name: "Sevde",
+        role: "Kına Gelini",
+        content: "Ayşe hanııım, Zeynep hanııım dün gece her şeyiyle mükemmeldi. Hayallerimin ötesinde bir kına gecesiydi. Emeklerinize sağlık hem misafirlerimiz hem ben gerçekten çok eğlendik her şeyiyle içime sindi iyi ki sizinle tanışmışız tüm emekleriniz için çok teşekkür ederim. Aile masalarında da sürpriz yaptınız o kadar beğendim ki, vallahi harikalar yaptınız Allah razı olsun."
+    },
 ];
